@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+if [ -f "$1"/compile ]; then
+  echo "custom"
+  exit 0
+else
+  exit 1
+fi
